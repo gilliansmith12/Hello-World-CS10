@@ -1,12 +1,15 @@
 //Global Variables
 //Called Initializing Variables
 String g;
-String h;
+char h;
 String i;
 String j;
 String k;
 String l;
-int ten, hundred, thousand, million, newCountingVariable;
+int ten, hundred, thousand;
+long million; //big int
+float newCountingVariable_1; //small decimal variable
+double newCountingVariable_2; //bid decimal variable
 String m;
 String n ;
 int one;
@@ -16,7 +19,7 @@ void setup() {
   //
   //Called Declaring, Assigning, Populating Values
   g = "Mr";
-  h = ".";
+  h = '.';
   i = "Mercer";
   j = "counts";
   k = "to";
@@ -28,7 +31,8 @@ void setup() {
   m = "by";
   n = "1";
   one = int(n);
-  newCountingVariable = ten * million + one / thousand; //user defined
+  newCountingVariable_1 = ten * million + one / thousand; //user defined
+  newCountingVariable_2 = newCountingVariable_1;
   //newCountingVariable is a decimal
   //
   println(g + h, i, j, k, l);
@@ -44,7 +48,7 @@ Modulus or Modulo: %
 void draw() {
   ten = ten + one;
   println(g + h, i, j, k, ten, m, n);
-  println(newCountingVariable);
+  println(m, newCountingVariable_1);
 }//End draw()
 
 void keyPressed() {
